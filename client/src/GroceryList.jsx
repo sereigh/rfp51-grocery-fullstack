@@ -1,6 +1,6 @@
 import React from 'react';
 
-const GroceryList = () => (
+const GroceryList = (props) => (
   <h2>Hihihihi</h2>
 );
 

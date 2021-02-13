@@ -11,7 +11,8 @@ class App extends React.Component {
   //lifecycle
   render() {
     return (
-      <h1>'HEYEYEYEYEYE'</h1>
+
+        <GroceryList />
     );
   }
 };
