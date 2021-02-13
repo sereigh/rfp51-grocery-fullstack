@@ -1,15 +1,15 @@
 import React from 'react';
 
-const GroceryList = (props) => (
+const GroceryList = ({listItems}) => (
   <div>
-    <h2>Hihihihi</h2>
-    <strong>
-    {props.listItems[0].itemName}
-    </strong>: {props.listItems[0].itemQuanity}
-    <strong>
-    <br></br>
-    {props.listItems[1].itemName}
-    </strong>: {props.listItems[1].itemQuanity}
+    <ul>
+      {listItems.map((item) =>
+      <li>
+        <span>{item.itemName}  </span>
+        <span>{item.itemQuanity}  </span>
+      </li>
+      )}
+    </ul>
   </div>
 );
 
