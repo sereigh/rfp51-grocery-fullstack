@@ -1,11 +1,11 @@
-const mysql = require("mysql");
+// const mysql = require("mysql");
 
-const connection = mysql.createConnection({
-  user: "",
-  password: "",
-  database: "",
-});
+// const connection = mysql.createConnection({
+//   user: "",
+//   password: "",
+//   database: "",
+// });
 
-connection.connect();
+// connection.connect();
 
-module.exports = connection;
+// module.exports = connection;
