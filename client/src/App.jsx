@@ -4,15 +4,19 @@ import GroceryList from './GroceryList.jsx';
 class App extends React.Component {
   constructor(props) {
     super(props);
-    //state
+    this.state = {
+      listItems: [{itemName: "soda", itemQuanity: 2}, {itemName: "cheese-its", itemQuanity: 2}]
+    };
     //bind
   }
   //handlers
   //lifecycle
   render() {
     return (
-
-        <GroceryList />
+      <div>
+        <h1>Grocery List</h1>
+          <GroceryList listItems={this.state.listItems}/>
+      </div>
     );
   }
 };
