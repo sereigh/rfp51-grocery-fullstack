@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 const db = require('../db/queries.js');
 
-router.get('/', (req, res) => {
+router.get('/groceries', (req, res) => {
   console.log('get got');
   db.getAll((err, results) => {
     if (err) {

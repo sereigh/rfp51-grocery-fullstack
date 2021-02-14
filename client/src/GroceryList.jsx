@@ -1,12 +1,12 @@
 import React from 'react';
+import GroceryListItem from './GroceryListItem.jsx';
 
 const GroceryList = ({listItems}) => (
   <div>
     <ul>
       {listItems.map((item) =>
       <li>
-        <span>{item.itemName}  </span>
-        <span>{item.itemQuanity}  </span>
+        <GroceryListItem item={item}/>
       </li>
       )}
     </ul>
